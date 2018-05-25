@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "parser-executor",
+    "name": "parser",
+    "region": "eu-west-2"
+  }
+}

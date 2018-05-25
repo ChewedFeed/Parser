@@ -1,0 +1,35 @@
+{
+  "name": "chewedfeed_parser",
+  "version": "0.0.1",
+  "description": "ChewedFeed Feed Parser",
+  "main": "index.js",
+  "repository": "git@github.com:ChewedFeed/Parser.git",
+  "author": "keloran <keloran@chewedfeed.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn test:standard && yarn test:endpoint",
+    "test:standard": "standard index.js src/index.js",
+    "test:endpoint": "mocha test/ --exit",
+    "claudia:create": "claudia create --name parser --region eu-west-2 --runtime nodejs8.10 --handler index.handler",
+    "claudia:test": "claudia test-lambda",
+    "claudia:deploy": "claudia update --runtime nodejs8.10",
+    "watch": "nodemon --exec 'yarn test'"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.245.1",
+    "blindparser": "^1.0.3",
+    "bugfixes": "^1.7.0",
+    "moment": "^2.22.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "claudia": "^4.0.0",
+    "dotenv": "^5.0.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "standard": "^11.0.1"
+  }
+}
