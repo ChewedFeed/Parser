@@ -1,6 +1,5 @@
 const bugfixes = require('bugfixes')
-
-const libs = require('./libs')
+const libs = require('chewedfeed')
 
 const bugfunctions = bugfixes.functions
 
@@ -11,6 +10,8 @@ module.exports = (event, context, callback) => {
   details.feedId = body.feedId
   details.getFeed((error, result) => {
     if (error) {
+      bugfixes.error('GetFeed', error)
+
       return callback(null, bugfunctions.lambdaError(100, {
         success: false,
         error: error
@@ -18,6 +19,8 @@ module.exports = (event, context, callback) => {
     }
 
     if (result.skip === false) {
+      bugfixes.info('Skipped', result)
+
       return callback(null, bugfunctions.lambdaResult(101, {
         success: false
       }))
@@ -29,6 +32,8 @@ module.exports = (event, context, callback) => {
     parse.format = result.format
     parse.parse((error, result) => {
       if (error) {
+        bugfixes.error('Parse', error)
+
         return callback(null, bugfunctions.lambdaError(102, {
           error: error,
           success: false
@@ -37,6 +42,8 @@ module.exports = (event, context, callback) => {
 
       parse.items(result.items, (error, result) => {
         if (error) {
+          bugfixes.error('Items', error)
+
           return callback(null, bugfunctions.lambdaError(103, {
             error: error,
             success: false

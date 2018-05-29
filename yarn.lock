@@ -208,6 +208,20 @@ aws-sdk@^2.173.0, aws-sdk@^2.245.1:
     uuid "3.1.0"
     xml2js "0.4.17"
 
+aws-sdk@^2.247.1:
+  version "2.247.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.247.1.tgz#be5f220d40665ac91d3a84a51f029fa05560c4ee"
+  dependencies:
+    buffer "4.9.1"
+    events "1.1.1"
+    ieee754 "1.1.8"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.1.0"
+    xml2js "0.4.17"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -439,6 +453,15 @@ chardet@^0.4.0:
 check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
+
+chewedfeed@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/chewedfeed/-/chewedfeed-0.0.3.tgz#b1d656339bde574a9ac6e43c721baf69418ff68d"
+  dependencies:
+    aws-sdk "^2.247.1"
+    blindparser "^1.0.3"
+    bugfixes "^1.7.0"
+    uuid "^3.2.1"
 
 chokidar@^2.0.2:
   version "2.0.3"
