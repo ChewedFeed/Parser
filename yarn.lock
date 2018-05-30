@@ -454,13 +454,14 @@ check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
 
-chewedfeed@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/chewedfeed/-/chewedfeed-0.0.4.tgz#51ec9e0a2caac74048640210bda951855f3e92d3"
+chewedfeed@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/chewedfeed/-/chewedfeed-0.0.11.tgz#963f80a50b511cae39be30291a8662511e04e077"
   dependencies:
     aws-sdk "^2.247.1"
     blindparser "^1.0.3"
     bugfixes "^1.7.0"
+    moment "^2.22.1"
     uuid "^3.2.1"
 
 chokidar@^2.0.2:

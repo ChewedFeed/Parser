@@ -19,7 +19,7 @@
     "aws-sdk": "^2.245.1",
     "blindparser": "^1.0.3",
     "bugfixes": "^1.7.0",
-    "chewedfeed": "^0.0.4",
+    "chewedfeed": "^0.0.11",
     "moment": "^2.22.1",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
