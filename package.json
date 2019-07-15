@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "claudia": "^4.0.0",
+    "claudia": "^5.6.0",
     "dotenv": "^5.0.1",
     "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
