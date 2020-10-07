@@ -20,7 +20,7 @@
     "blindparser": "^1.0.3",
     "bugfixes": "^1.7.0",
     "chewedfeed": "^0.0.15",
-    "moment": "^2.22.1",
+    "moment": "^2.29.1",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "uuid": "^3.2.1"
